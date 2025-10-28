@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional - I.E. Mercedes Indacochea Lozano 20827 - Huacho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="logo-loading">
+                <img src="images/logo-colegio.png" alt="Logo Colegio San Miguel" class="logo-image">
+                <h1>I.E. Mercedes Indacochea Lozano 20827 - Huacho</h1>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>Cargando test vocacional...</p>
+        </div>
+    </div>
+    
+    <!-- Imagen diagonal superior -->
+    <div class="diagonal-banner"></div>
+    
+    <div class="container" id="mainContent">
+        <header>
+            <div class="logo">
+                <h1>Test Vocacional</h1>
+                <h2>I.E. Mercedes Indacochea Lozano 20827 - Huacho</h2>
+            </div>
+        </header>
+        
+        <section class="search-section">
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="dni">Número de DNI:</label>
+                    <input type="text" id="dni" placeholder="Ingresa tu DNI (8 dígitos)" maxlength="8" required>
+                </div>
+                <button type="submit">Consultar Resultados</button>
+            </form>
+            <div class="error-message" id="errorMessage">
+                DNI no encontrado. Verifica el número e intenta nuevamente.
+            </div>
+        </section>
+        
+        <section class="results-section" id="resultsSection">
+            <div class="student-info">
+                <div class="avatar" id="studentAvatar">MS</div>
+                <div class="student-details">
+                    <h2 id="studentName">Matias Silva</h2>
+                    <p id="studentDni">DNI: 72454811</p>
+                    <p id="studentGrade">Grado/Sección: 5to Grado - Sección A</p>
+                </div>
+            </div>
+            
+            <div class="vocational-results">
+                <h2>Resultados del Test Vocacional</h2>
+                
+                <div class="result-card">
+                    <h3 class="result-title">Estilos de Aprendizaje</h3>
+                    <p class="result-description" id="learningStyles"></p>
+                </div>
+                
+                <div class="result-card">
+                    <h3 class="result-title">Personalidad</h3>
+                    <p class="result-description" id="personality"></p>
+                </div>
+                
+                <div class="result-card">
+                    <h3 class="result-title">Orientación Vocacional</h3>
+                    <p class="result-description" id="vocationalOrientation"></p>
+                </div>
+                
+                <div class="career-suggestions">
+                    <h3>Conclusiones</h3>
+                    <p class="career-intro" id="conclusionText"></p>
+                    <div class="career-list" id="careerList"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2025 IEMIL - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
